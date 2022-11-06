@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import backgroundFull from "./images/infopetcl.png"
+import backgroundMobile from "./images/infopetmobile.jpg"
 
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const imageUrl = windowWidth >= 650 ? backgroundFull : backgroundFull;
+  const imageUrl = windowWidth >= 650 ? backgroundFull : backgroundMobile;
 
   useEffect(() => {
       const handleWindowResize = () => {
